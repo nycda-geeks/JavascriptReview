@@ -1,0 +1,66 @@
+<script>
+function drieparameters (para1, para2, para3){
+	return (para1 + para2 + para3)
+}
+
+console.log(drieparameters(3,4,5))
+
+
+function laatsteletter (langwoord){
+ 	return (langwoord.slice(-1));
+ }
+
+ console.log (laatsteletter("cattywampus"));
+
+
+function cube (afmeting){
+	return (afmeting*afmeting*afmeting)
+}
+
+console.log (cube(10))
+
+
+function revurse(stringeling) {
+  var o = '';
+  for (var i = stringeling.length - 1; i >= 0; i--)
+    o += stringeling[i];
+  return o;
+}
+console.log (revurse("cattywampus"))
+
+
+var stuff =["ball","table","pan"]
+var drinks = ["wine", "coke", "water"]
+
+function takeintwoarrays (array1, array2){
+	var returnobject ={};	
+	for (i=0; i< array1.length; i++){
+		returnobject[array1[i]] = array2[i];
+	}
+return returnobject;
+}
+console.log(takeintwoarrays(stuff, drinks));
+
+
+
+var arrayski = ["hink: ", "stap: ", "sprong: "]
+var arrayray = ["tik", "tak", "tok"]
+
+
+function stickarrays (lalala, blabla){
+var returnarray = 0;
+for (var i = 0; i < lalala.length; i++)
+	{
+		returnarray[arrayski[i]] + [arrayray[i]]
+	}
+return returnarray;
+}
+console.log (stickarrays(arrayray, arrayski))
+
+
+// this last one needs some more work.
+
+
+
+
+ </script>
