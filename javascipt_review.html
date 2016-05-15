@@ -48,19 +48,37 @@ var arrayray = ["tik", "tak", "tok"]
 
 
 function stickarrays (lalala, blabla){
-var returnarray = 0;
-for (var i = 0; i < lalala.length; i++)
-	{
-		returnarray[arrayski[i]] + [arrayray[i]]
-	}
-return returnarray;
+	var returnarray = {};
+	for (var i = 0; i < lalala.length; i++)
+		returnarray[arrayski[i]] = arrayray[i];
+	return returnarray;
+
 }
-console.log (stickarrays(arrayray, arrayski))
-
-
-// this last one needs some more work.
+console.log (stickarrays(arrayski, arrayray))
 
 
 
+var myObject = {
+	"x": "10",
+	"y": "100",
+	"z": "1000"
+}
+function makeArray(object) {
+
+var waarde = []
+var sleutel = [];
+for (var key in object) {
+    sleutel.push(key)
+    waarde.push(object[key]);
+}
+
+
+
+
+console.log(sleutel, waarde)
+}
+
+makeArray(myObject)
+     
 
  </script>
